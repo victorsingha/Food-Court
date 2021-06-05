@@ -34,16 +34,13 @@ function newOrder() {
 }
 
 function printReceipt(order) {
-  console.log(JSON.stringify(order));
-  //   console.log(`orderID: ${order.orderID}`);
-  //   console.log(`Customer Name: ${order.customer}`);
-  //   foodList = order.food;
-  //   console.log(foodList);
-  //   console.log(`Total Amount = ${order.totalprice}`);
+  console.log(order);
+  //console.log(JSON.stringify(order));
 }
 
 function showOrders() {
-  console.log(JSON.stringify(allOrder));
+  //console.log(JSON.stringify(allOrder));
+  console.log(allOrder);
 }
 
 function makeid(length) {
