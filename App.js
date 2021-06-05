@@ -32,7 +32,7 @@ function populate(callback) {
   setTimeout(function () {
     Controller.populateAllOrder();
     callback();
-  }, 1000);
+  }, 100);
 }
 
 populate(showOption);
