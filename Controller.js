@@ -17,11 +17,17 @@ function newOrder() {
       foodList.push(food);
     } else isFood = false;
   }
+  total = 0;
   const order = new Order();
-  order.orderID = makeid(7);
+  order.orderID = makeid(5);
   order.customer = customer_name;
   order.food = foodList;
-  order.totalprice = 999;
+
+  foodList.forEach((f) => {
+    total = total + parseInt(f.price);
+  });
+
+  order.totalprice = total;
 
   allOrder.push(order);
   printReceipt(order);
@@ -42,8 +48,7 @@ function showOrders() {
 
 function makeid(length) {
   var result = [];
-  var characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
   var charactersLength = characters.length;
   for (var i = 0; i < length; i++) {
     result.push(
