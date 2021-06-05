@@ -18,7 +18,7 @@ function newOrder() {
     } else isFood = false;
   }
   const order = new Order();
-  order.orderID = 424;
+  order.orderID = makeid(7);
   order.customer = customer_name;
   order.food = foodList;
   order.totalprice = 999;
@@ -26,6 +26,7 @@ function newOrder() {
   allOrder.push(order);
   printReceipt(order);
 }
+
 function printReceipt(order) {
   console.log(JSON.stringify(order));
   //   console.log(`orderID: ${order.orderID}`);
@@ -34,8 +35,22 @@ function printReceipt(order) {
   //   console.log(foodList);
   //   console.log(`Total Amount = ${order.totalprice}`);
 }
+
 function showOrders() {
   console.log(JSON.stringify(allOrder));
+}
+
+function makeid(length) {
+  var result = [];
+  var characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  var charactersLength = characters.length;
+  for (var i = 0; i < length; i++) {
+    result.push(
+      characters.charAt(Math.floor(Math.random() * charactersLength))
+    );
+  }
+  return result.join("");
 }
 
 module.exports = { newOrder, showOrders };
