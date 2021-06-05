@@ -1,5 +1,3 @@
-const Food = require("./Food");
-
 class Order {
   orderID;
   customer;
