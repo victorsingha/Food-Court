@@ -15,11 +15,14 @@ function newOrder() {
       foodList.push(food);
     } else isFood = false;
   }
-
   const order = new Order();
   order.orderID = 424;
   order.customer = customer_name;
   order.food = foodList;
   order.totalprice = 999;
 }
-function showOrders() {}
+function showOrders() {
+  console.log(allOrder);
+}
+
+module.exports = { newOrder, showOrders };
