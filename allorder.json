@@ -1,1 +1,39 @@
-[{"orderID":"su9h1","customer":"victor","food":[{"foodname":"tea","price":"50"},{"foodname":"bir","price":"90"}],"totalprice":140},{"orderID":"48koi","customer":"john","food":[{"foodname":"biryani","price":"40"},{"foodname":"coffee","price":"30"}],"totalprice":70}]
+[
+  {
+    "orderID": "su9h1",
+    "customer": "victor",
+    "food": [
+      { "foodname": "tea", "price": "50" },
+      { "foodname": "bir", "price": "90" }
+    ],
+    "totalprice": 140
+  },
+  {
+    "orderID": "48koi",
+    "customer": "john",
+    "food": [
+      { "foodname": "biryani", "price": "40" },
+      { "foodname": "coffee", "price": "30" }
+    ],
+    "totalprice": 70
+  },
+  {
+    "orderID": "xgswd",
+    "customer": "atif",
+    "food": [
+      { "foodname": "biryani", "price": "50" },
+      { "foodname": "kabab", "price": "100" },
+      { "foodname": "tea", "price": "10" }
+    ],
+    "totalprice": 160
+  },
+  {
+    "orderID": "e5dix",
+    "customer": "victor",
+    "food": [
+      { "foodname": "tea", "price": "10" },
+      { "foodname": "egg", "price": "20" }
+    ],
+    "totalprice": 30
+  }
+]
