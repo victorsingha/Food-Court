@@ -1,12 +1,12 @@
 const Controller = require("./Controller");
 const prompt = require("prompt-sync")();
 
-var NOTEXIT = true;
+var APP_ON = true;
 
 Controller.populateAllOrder();
 
 function showOption() {
-  while (NOTEXIT) {
+  while (APP_ON) {
     console.log(`Enter Choice:
             New Order    [1]
             Show Orders  [2]
@@ -20,7 +20,7 @@ function showOption() {
         Controller.showOrders();
         break;
       case "3":
-        NOTEXIT = false;
+        APP_ON = false;
         break;
       default:
         console.log(input);
